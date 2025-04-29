@@ -1,0 +1,162 @@
+/* .hero {
+    background: #343a40;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.services i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.sms-btn {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+} */
+
+/* ========== Global Settings ========== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background: linear-gradient(135deg, #343a40, #212529);
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero .sms-btn {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .sms-btn:hover {
+  background-color: #218838;
+}
+
+/* ========== Section Titles ========== */
+section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ========== Services Section ========== */
+.services .col-md-4 {
+  padding: 20px 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .col-md-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+}
+
+.services h5 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* ========== Why Choose Us Section ========== */
+#why ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+#why li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 24px;
+}
+
+#why li::before {
+  content: "✔";
+  color: #198754;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ========== Contact Section ========== */
+#contact .sms-btn {
+  margin-top: 15px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+footer {
+  font-size: 0.9rem;
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  text-align: center;
+  color: #6c757d;
+}
+/* ========== Hero Section with Background Image ========== */
+.hero {
+  position: relative;
+  background: url("../assets/hero-bg.png") center center/cover no-repeat !important;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 59, 0, 0.753); /* semi-dark overlay */
+  z-index: -1;
+}
+
+.main-color {
+  color: #4b4f58;
+}
+
+.main-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.bg-dark-green {
+  background-color: #0c3b00;
+}
